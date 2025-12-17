@@ -12,10 +12,10 @@ if(computerResult === 1) {
 
 }
 
-function getHumanChoice() {
-    let userResult = prompt("Enter choice","",);
-    return userResult;    
-}
+// function getHumanChoice() {
+//     let userResult = prompt("Enter choice","",);
+//     return userResult;    
+// }
 
 
 
@@ -24,8 +24,7 @@ let computerScore = 0;
 
 function playRound() {
     const computerChoice = getComputerChoice().toLowerCase();
-    const humanChoice = getHumanChoice().toLowerCase();
-
+    const humanChoice = ''
     console.log(`Your choice: ${humanChoice}`);
     console.log(`Computer's choice: ${computerChoice}`)
 
@@ -62,4 +61,18 @@ playRound();
     console.log(`Human: ${humanScore}, Computer: ${computerScore}`)
 }
 
-playGame()
+// playGame()
+
+const buttons = document.querySelectorAll('button');
+// function getHumanChoice() {
+    let humanChoice = ''
+    buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        humanChoice = button.value;
+    })
+})
+// }
+
+
+
+
