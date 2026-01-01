@@ -4,15 +4,61 @@
         <meta charset="UTF-8">
         <meta name ="viewport",content="width=device-width, initial-scale =1.0">
         <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="rps.css"></link>
     </head>
     <body>
+        <div class="scoreCard">
+             <div >
+                Computer:<br>
+                <div class=computer-decals>
+                    
+                </div>
+                <div id="computer-choice"></div>
+            </div>
+
+            <div>
+                <p>ROUND:<div id="round-display"></div></p>
+                <div id="round-message"></div> 
+            </div>
+            <div >
+                Human:<br>
+                <div class=human-decals>
+                </div>
+                <div id="human-choice"></div>
+            </div>
+            
+        </div>
+           
+            
+
+            <div id="final-round-message"></div>
+            <div id="score-message">
+                <p></p>
+            </div>
+
+            <div id="choice-display">
+            <div>
+               
+            </div>
+               
         <div class="human-container">
             <p>Choose Your Weapon:</p>
-            <button type="button" value="rock">Rock</button>
-            <button type="button" value="paper">Paper</button>
-            <button type="button" value="scissors">Scissors</button>
+            <button type="button" value="rock" class="choices">Rock</button>
+            <button type="button" value="paper" class="choices">Paper</button>
+            <button type="button" value="scissors" class="choices">Scissors</button>
+        <div class="new-round">
+            <button type="button" value="newround" id="newround">New round</button>
         </div>
-        <div id="computer-container"></div>
+        </div>
+         
+               
+        
+        <div>
+            <button type="button" value="start" id="start">Start</button>
+        </div>
+       
+         
+        </div>
         <script src="rock-paper-scissors.js" defer></script>
     </body>
 </html>

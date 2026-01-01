@@ -1,0 +1,101 @@
+
+.human-container{
+    display:none;
+    
+}
+body{
+    
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 32px;
+    background-color: #000000;
+    background-image: radial-gradient(#ffffff 1px, transparent 0);
+    background-size: 20px 20px;
+    color: white;
+     animation: shake 3.90s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px
+}
+
+
+.container{
+    gap: 32px;
+    padding:16px;
+}
+
+
+#start{
+    font-size:32px;
+    animation: shake 0.70s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+} 
+
+@keyframes shake {
+    0% { transform : translateX(0);}
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+.new-round{
+ padding: 18px;   
+}
+
+
+/* 
+button{
+    padding:8px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    gap:8px;
+    border-radius:16px;
+
+ */
+
+#choice-display{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:16px;
+    text-align: center;
+}
+.choices{
+    gap: 36px;
+    padding:36px
+}
+p{
+   
+    color:rgb(255, 255, 255);
+}
+
+#newround{
+    text-align: center;
+}
+
+.scoreCard{
+    display:flex;
+    justify-content:space-between;
+    padding-left:24px;
+    padding-right:24px;
+    padding-top:12px;
+    font-size:36px;
+     /* animation: shake 3.90s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px */
+}
+
+.computer-decals,
+.human-decals{
+    font-size: 192px;
+     /* animation: shake 3.90s cubic-bezier(.36, .07, .19, .97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px */
+}
